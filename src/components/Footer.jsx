@@ -1,6 +1,10 @@
 import { Link } from 'react-router-dom'
-import { Facebook, Instagram, Linkedin, Mail } from 'lucide-react'
 import { useLocation } from "react-router-dom"
+
+import { SlSocialFacebook as Facebook } from "react-icons/sl"
+import { LuInstagram as Instagram } from "react-icons/lu"
+import { FiLinkedin as Linkedin } from "react-icons/fi"
+import { IoMailOutline as Mail } from "react-icons/io5"
 
 export function Footer() {
 
@@ -18,20 +22,20 @@ export function Footer() {
                         <h2 className="text-lg font-semibold text-gray-800">Electric Car World</h2>
                         <p className="mt-2 text-sm text-gray-600">Driving the future of sustainable transportation</p>
                     </div>
-                    <div className="flex space-x-6">
-                        <Link href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-blue-500 transition-colors">
+                    <div className="flex gap-6">
+                        <Link href="#" className="text-gray-600 hover:text-blue-500 transition-colors">
                             <span className="sr-only">Facebook</span>
-                            <Facebook className="h-6 w-6" />
+                            <Facebook className="translate-x-2 h-6 w-6" />
                         </Link>
-                        <Link href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-pink-500 transition-colors">
+                        <Link href="#" className="text-gray-600 hover:text-pink-500 transition-colors">
                             <span className="sr-only">Instagram</span>
                             <Instagram className="h-6 w-6" />
                         </Link>
-                        <Link href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-blue-700 transition-colors">
+                        <Link href="#" className="text-gray-600 hover:text-blue-700 transition-colors">
                             <span className="sr-only">LinkedIn</span>
                             <Linkedin className="h-6 w-6" />
                         </Link>
-                        <Link href="mailto:info@electriccarworld.com" className="text-gray-600 hover:text-green-500 transition-colors">
+                        <Link href="#" className="text-gray-600 hover:text-green-500 transition-colors">
                             <span className="sr-only">Email</span>
                             <Mail className="h-6 w-6" />
                         </Link>
