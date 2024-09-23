@@ -5,11 +5,14 @@ import { Label } from "../components/ui/label"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "../components/ui/card"
 import { Alert, AlertDescription } from "../components/ui/alert"
 import { BatteryCharging, Car } from 'lucide-react'
+import { useNavigate } from 'react-router-dom'
 
 export function Login() {
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
     const [loginStatus, setLoginStatus] = useState('idle') //<'idle' | 'success' | 'error'>
+
+    const navigate = useNavigate()
 
     const handleSubmit = (e) => {
         e.preventDefault()
@@ -18,6 +21,7 @@ export function Login() {
 
             sessionStorage.setItem('user', JSON.stringify({ email }))
             setLoginStatus('success')
+            navigate('/')
         } else {
             setLoginStatus('error')
         }
