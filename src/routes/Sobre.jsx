@@ -1,4 +1,5 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+import gabrielFoto from "../assets/FotoGabriel.jpg"
 
 export function Sobre() {
   const developers = [
@@ -6,7 +7,7 @@ export function Sobre() {
     { name: "Kayky Stiliano", image: "/placeholder.svg?height=200&width=200&text=Kayky" },
     { name: "Pedro Mendes", image: "/placeholder.svg?height=200&width=200&text=Pedro+M" },
     { name: "Pedro Bizzo", image: "/placeholder.svg?height=200&width=200&text=Pedro+B" },
-    { name: "Gabriel Barros", image: "/placeholder.svg?height=200&width=200&text=Gabriel" }
+    { name: "Gabriel Barros", image: gabrielFoto }
   ]
 
   return (
