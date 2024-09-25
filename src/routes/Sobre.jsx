@@ -1,13 +1,14 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import gabrielFoto from "../assets/FotoGabriel.jpg"
 import fotoBradescoro from '../assets/foto_bradescoro.jpg'
+import fotoBizzo from '../assets/fotoBizzo.jpeg'
 
 export function Sobre() {
   const developers = [
     { name: "João Romero", image: "/placeholder.svg?height=200&width=200&text=João" },
     { name: "Kayky Stiliano", image: "/placeholder.svg?height=200&width=200&text=Kayky" },
     { name: "Pedro Mendes", image: fotoBradescoro },
-    { name: "Pedro Bizzo", image: "/placeholder.svg?height=200&width=200&text=Pedro+B" },
+    { name: "Pedro Bizzo", image: fotoBizzo },
     { name: "Gabriel Barros", image: gabrielFoto }
   ]
 
