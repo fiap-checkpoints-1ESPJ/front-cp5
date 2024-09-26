@@ -2,11 +2,12 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import gabrielFoto from "../assets/FotoGabriel.jpg"
 import fotoBradescoro from '../assets/foto_bradescoro.jpg'
 import fotoBizzo from '../assets/fotoBizzo.jpeg'
+import fotoKayky from '../assets/foto_kayko.jpeg'
 
 export function Sobre() {
   const developers = [
     { name: "João Romero", image: "/placeholder.svg?height=200&width=200&text=João" },
-    { name: "Kayky Stiliano", image: "/placeholder.svg?height=200&width=200&text=Kayky" },
+    { name: "Kayky Stiliano", image: fotoKayky },
     { name: "Pedro Mendes", image: fotoBradescoro },
     { name: "Pedro Bizzo", image: fotoBizzo },
     { name: "Gabriel Barros", image: gabrielFoto }
