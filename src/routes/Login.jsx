@@ -7,6 +7,8 @@ import { Alert, AlertDescription } from "../components/ui/alert"
 import { BatteryCharging, Car } from 'lucide-react'
 import { useNavigate } from 'react-router-dom'
 
+const SALT = 'Ab!23@0((*0basdbelh'
+
 export function Login() {
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
@@ -18,8 +20,7 @@ export function Login() {
         e.preventDefault()
 
         if (email && password) {
-
-            sessionStorage.setItem('user', JSON.stringify({ email }))
+            sessionStorage.setItem('user', JSON.stringify({ userId: btoa(email + password + SALT) }))
             setLoginStatus('success')
             navigate('/')
         } else {
