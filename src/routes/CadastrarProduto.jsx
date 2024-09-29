@@ -5,7 +5,7 @@ import { Label } from "@/components/ui/label"
 import { Textarea } from "@/components/ui/textarea"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
-import { toast, useToast } from "@/hooks/use-toast"
+import { useToast } from "@/hooks/use-toast"
 import { useNavigate } from 'react-router-dom'
 
 export function CadastrarProduto() {
@@ -71,32 +71,34 @@ export function CadastrarProduto() {
                                 required
                             />
                         </div>
-                        <div className="space-y-2">
-                            <Label htmlFor="category">Category</Label>
-                            <Select value={category} onValueChange={setCategory} required>
-                                <SelectTrigger>
-                                    <SelectValue placeholder="Select a category" />
-                                </SelectTrigger>
-                                <SelectContent>
-                                    <SelectItem value="sedan">Sedan</SelectItem>
-                                    <SelectItem value="suv">SUV</SelectItem>
-                                    <SelectItem value="compact">Compact</SelectItem>
-                                    <SelectItem value="truck">Truck</SelectItem>
-                                    <SelectItem value="luxury">Luxury</SelectItem>
-                                </SelectContent>
-                            </Select>
-                        </div>
-                        <div className="space-y-2">
-                            <Label htmlFor="price">Price</Label>
-                            <Input
-                                id="price"
-                                type="number"
-                                value={price}
-                                onChange={(e) => setPrice(e.target.value)}
-                                required
-                                min="0"
-                                step="0.01"
-                            />
+                        <div className='flex w-full gap-4'>
+                            <div className="space-y-2 flex-1">
+                                <Label htmlFor="category">Category</Label>
+                                <Select value={category} onValueChange={setCategory} required>
+                                    <SelectTrigger>
+                                        <SelectValue placeholder="Select a category" />
+                                    </SelectTrigger>
+                                    <SelectContent>
+                                        <SelectItem value="sedan">Sedan</SelectItem>
+                                        <SelectItem value="suv">SUV</SelectItem>
+                                        <SelectItem value="compact">Compact</SelectItem>
+                                        <SelectItem value="truck">Truck</SelectItem>
+                                        <SelectItem value="luxury">Luxury</SelectItem>
+                                    </SelectContent>
+                                </Select>
+                            </div>
+                            <div className="space-y-2 flex-1">
+                                <Label htmlFor="price">Price</Label>
+                                <Input
+                                    id="price"
+                                    type="number"
+                                    value={price}
+                                    onChange={(e) => setPrice(e.target.value)}
+                                    required
+                                    min="0"
+                                    step="0.01"
+                                />
+                            </div>
                         </div>
                         <div className="space-y-2">
                             <Label htmlFor="stock">Stock</Label>

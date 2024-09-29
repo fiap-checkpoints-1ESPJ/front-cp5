@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import { Link, useLocation, useNavigate } from 'react-router-dom'
 import { Button } from "../components/ui/button"
-import { Car, Home, Info, Menu, X, Package, ShoppingBag } from 'lucide-react'
+import { Home, Info, Menu, X, Package, ShoppingBag } from 'lucide-react'
 
 export function Nav() {
     const [isOpen, setIsOpen] = useState(false)
@@ -27,17 +27,12 @@ export function Nav() {
         <nav className="bg-gradient-to-r from-blue-500 to-green-500 text-white shadow-lg">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex items-center justify-between h-16">
-                    <div className="flex items-center">
-                        <Link href="/" className="flex-shrink-0">
-                            <Car className="h-8 w-8" />
-                        </Link>
-                        <div className="hidden md:block">
-                            <div className="ml-10 flex items-baseline space-x-4">
-                                <NavLink href="/" icon={<Home className="h-4 w-4 mr-2" />}>Home</NavLink>
-                                <NavLink href="/produtos" icon={<ShoppingBag className="h-4 w-4 mr-2" />}>Produtos</NavLink>
-                                <NavLink href="/sobre" icon={<Info className="h-4 w-4 mr-2" />}>Sobre</NavLink>
-                                <NavLink href="/cadastrar-produto" icon={<Package className="h-4 w-4 mr-2" />}>Cadastrar Produto</NavLink>
-                            </div>
+                    <div className="hidden md:block">
+                        <div className="ml-10 flex items-baseline space-x-4">
+                            <NavLink href="/" icon={<Home className="h-4 w-4 mr-2" />}>Home</NavLink>
+                            <NavLink href="/produtos" icon={<ShoppingBag className="h-4 w-4 mr-2" />}>Produtos</NavLink>
+                            <NavLink href="/sobre" icon={<Info className="h-4 w-4 mr-2" />}>Sobre</NavLink>
+                            <NavLink href="/cadastrar-produto" icon={<Package className="h-4 w-4 mr-2" />}>Cadastrar Produto</NavLink>
                         </div>
                     </div>
                     <div className="hidden md:flex gap-3">

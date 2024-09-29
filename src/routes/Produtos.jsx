@@ -11,81 +11,81 @@ const initialProducts = [
         "name": "Honda Civic",
         "category": "suv",
         "description": "aksdjb",
-        "price": 120,
+        "price": '12,000',
         "stock": 21,
-        "image": "https://images.pexels.com/photos/116675/pexels-photo-116675.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        "image": "https://images.pexels.com/photos/17205726/pexels-photo-17205726/free-photo-of-back-view-of-silver-honda-civic.jpeg?auto=compress&cs=tinysrgb&w=600"
     },
     {
         "id": 1727100014804,
         "name": "Toyota Corolla",
         "category": "sedan",
         "description": "Reliable and fuel-efficient sedan",
-        "price": 130,
+        "price": '130,000',
         "stock": 30,
-        "image": "https://images.pexels.com/photos/159238/city-cars-car-compact-car-159238.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        "image": "https://images.pexels.com/photos/19581626/pexels-photo-19581626/free-photo-of-raindrops-on-black-toyota-corolla.jpeg?auto=compress&cs=tinysrgb&w=600"
     },
     {
         "id": 1727100014805,
         "name": "Ford Mustang",
         "category": "sports",
         "description": "Powerful performance car",
-        "price": 550,
+        "price": '550,000',
         "stock": 10,
-        "image": "https://images.pexels.com/photos/235222/pexels-photo-235222.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        "image": "https://images.pexels.com/photos/544542/pexels-photo-544542.jpeg?auto=compress&cs=tinysrgb&w=600"
     },
     {
         "id": 1727100014806,
         "name": "Chevrolet Camaro",
         "category": "sports",
         "description": "Stylish sports car",
-        "price": 500,
+        "price": '50,000',
         "stock": 12,
-        "image": "https://images.pexels.com/photos/358070/pexels-photo-358070.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        "image": "https://images.pexels.com/photos/755298/pexels-photo-755298.jpeg?auto=compress&cs=tinysrgb&w=600"
     },
     {
         "id": 1727100014807,
         "name": "Jeep Wrangler",
         "category": "suv",
         "description": "Off-road SUV",
-        "price": 300,
+        "price": '300,000',
         "stock": 20,
-        "image": "https://images.pexels.com/photos/1402787/pexels-photo-1402787.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        "image": "https://images.pexels.com/photos/1638459/pexels-photo-1638459.jpeg?auto=compress&cs=tinysrgb&w=600"
     },
     {
         "id": 1727100014808,
         "name": "BMW X5",
         "category": "luxury",
         "description": "Luxury SUV with premium features",
-        "price": 700,
+        "price": '70,000',
         "stock": 5,
-        "image": "https://images.pexels.com/photos/243557/pexels-photo-243557.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        "image": "https://images.pexels.com/photos/12532746/pexels-photo-12532746.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     },
     {
         "id": 1727100014809,
         "name": "Audi A8",
         "category": "luxury",
         "description": "Luxury sedan with advanced tech",
-        "price": 800,
+        "price": '80,000',
         "stock": 8,
-        "image": "https://images.pexels.com/photos/919073/pexels-photo-919073.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        "image": "https://images.pexels.com/photos/1719647/pexels-photo-1719647.jpeg?auto=compress&cs=tinysrgb&w=600"
     },
     {
         "id": 1727100014810,
         "name": "Tesla Model S",
         "category": "electric",
         "description": "Electric luxury car with autopilot",
-        "price": 900,
+        "price": '90,000',
         "stock": 4,
-        "image": "https://images.pexels.com/photos/979999/pexels-photo-979999.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        "image": "https://images.pexels.com/photos/28123194/pexels-photo-28123194/free-photo-of-tesla-model-s-75d-2015-price-59-900.jpeg?auto=compress&cs=tinysrgb&w=600"
     },
     {
         "id": 1727100014811,
         "name": "Nissan Leaf",
         "category": "electric",
         "description": "Affordable electric vehicle",
-        "price": 350,
+        "price": '350,000',
         "stock": 15,
-        "image": "https://images.pexels.com/photos/100563/pexels-photo-100563.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        "image": "https://images.pexels.com/photos/18818828/pexels-photo-18818828/free-photo-of-blue-nissan-sports-car.jpeg?auto=compress&cs=tinysrgb&w=600"
     }
 ]
 
