@@ -10,7 +10,7 @@ export default function App() {
 
     useEffect(() => {
         const user = JSON.parse(sessionStorage.getItem('user'))
-        if (!user || !user.email || user.email.length === 0) navigate('/login')
+        if (!user || !user.userId || user.userId.length === 0) navigate('/login')
     }, [pathname])
 
     return (
